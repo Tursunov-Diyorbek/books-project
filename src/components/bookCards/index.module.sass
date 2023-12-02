@@ -1,0 +1,191 @@
+.header
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-top: 36px
+    @media (max-width: 900px)
+        display: block
+
+.booksNumber
+    h2
+        color: var(--foundation-white-white-50, #FEFEFE)
+        font-family: "Mulish", sans-serif
+        font-size: 36px
+        font-style: normal
+        font-weight: 700
+        line-height: normal
+
+        span
+            color: var(--foundation-purple-purple-500, #6200EE)
+            font-family: "Mulish", sans-serif
+            font-size: 36px
+            font-style: normal
+            font-weight: 700
+            line-height: normal
+
+    article
+        color: var(--foundation-white-white-50, #FEFEFE)
+        font-family: "Mulish", sans-serif
+        font-size: 20px
+        font-style: normal
+        font-weight: 400
+        line-height: normal
+        align-self: stretch
+
+.cardNameSearch
+    display: flex
+    align-items: center
+    gap: 24px
+    @media (max-width: 900px)
+        margin-top: 20px
+
+    input
+        display: flex
+        width: 320px
+        flex-direction: column
+        align-items: flex-start
+        gap: 4px
+        height: 47px
+        padding: 14px 16px
+        gap: 16px
+        align-self: stretch
+        border-radius: 6px
+        border: 1px solid var(--foundation-grey-grey-50, #EBEBEB)
+        background: var(--foundation-white-white-50, #FEFEFE)
+        color: var(--foundation-grey-grey-900, #151515)
+        font-feature-settings: 'clig' off, 'liga' off
+        font-family: "Mulish", sans-serif
+        font-size: 16px
+        font-style: normal
+        font-weight: 400
+        line-height: 120%
+        @media (max-width: 900px)
+            height: 35px
+            width: 100%
+
+    button
+        display: flex
+        padding: 10px 24px
+        height: 47px
+        justify-content: center
+        align-items: center
+        gap: 12px
+        border-radius: 4px
+        background: var(--foundation-purple-purple-500, #6200EE)
+        color: var(--foundation-white-white-50, #FEFEFE)
+        font-family: "Mulish", sans-serif
+        font-size: 16px
+        font-style: normal
+        font-weight: 500
+        line-height: normal
+        @media (max-width: 900px)
+            height: 35px
+            width: 30%
+            font-size: 12px
+
+.cards
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    flex-wrap: wrap
+
+.books
+    display: flex
+    width: 32%
+    padding: 32px
+    margin-top: 30px
+    flex-direction: column
+    position: relative
+    gap: 16px
+    border-radius: 12px
+    border: 1px solid var(--foundation-grey-grey-50, #EBEBEB)
+    background: var(--foundation-white-white-50, #FEFEFE)
+    box-shadow: 4px 4px 19px -3px rgba(60, 61, 62, 0.2)
+    @media (max-width: 900px)
+        width: 48%
+
+    @media (max-width: 600px)
+        width: 100%
+
+    h3
+        color: var(--foundation-grey-grey-900, #151515)
+        font-family: "Montserrat", sans-serif
+        font-size: 16px
+        font-style: normal
+        font-weight: 600
+        line-height: normal
+        align-self: stretch
+
+    p
+        color: var(--foundation-grey-grey-500, #333)
+        font-family: "Mulish", sans-serif
+        font-size: 14px
+        font-style: normal
+        font-weight: 400
+        line-height: 150%
+        align-self: stretch
+
+    &__footer
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+        p:nth-child(1)
+            color: var(--foundation-grey-grey-500, #333)
+            font-family: "Mulish", sans-serif
+            font-size: 14px
+            font-style: normal
+            font-weight: 500
+            line-height: 15px
+            margin: 0
+
+        p:nth-child(2)
+            padding: 3px 12px
+            gap: 6px
+            margin: 0
+            border-radius: 8.5px
+            background: var(--foundation-purple-purple-50, #EFE6FD)
+            color: var(--foundation-purple-purple-300, #9654F4)
+            text-align: center
+            font-family: "Mulish", sans-serif
+            font-size: 12px
+            font-style: normal
+            font-weight: 400
+            line-height: normal
+
+    &__deleteAndEdit
+        position: absolute
+        bottom: -31px
+        right: 20px
+        z-index: 999
+        display: flex
+        gap: 3px
+        display: none
+
+    &:hover
+        .books__deleteAndEdit
+            display: flex
+
+.delete
+    border-radius: 0px 0px 6px 6px
+    background: var(--foundation-orange-orange-500, #FF4D4F)
+    box-shadow: 0px 6px 32px 0px rgba(21, 21, 21, 0.48)
+    width: 50px
+    height: 30px
+    padding: 5px
+    color: #fff
+    cursor: pointer
+
+.edit
+    border-radius: 0px 0px 6px 6px
+    background: var(--foundation-purple-purple-500, #6200EE)
+    box-shadow: 0px 6px 32px 0px rgba(21, 21, 21, 0.48)
+    width: 50px
+    height: 30px
+    padding: 5px
+    color: #fff
+    cursor: pointer
+
+.form
+    p
+        margin: 0

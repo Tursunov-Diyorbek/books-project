@@ -1,0 +1,88 @@
+.container
+    max-width: 1300px
+    margin: 0 auto
+    padding: 0 10px
+
+.homePage
+
+    &__logo
+        display: flex
+        align-items: center
+        gap: 20px
+
+        article
+            color: var(--foundation-purple-purple-500, #6200EE)
+            font-family: "Mulish", sans-serif
+            font-size: 18px
+            font-style: normal
+            font-weight: 700
+            line-height: 120%
+            letter-spacing: 0.576px
+
+            span
+                color: #FFF
+                font-family: "Mulish", sans-serif
+                font-size: 18px
+                font-style: normal
+                font-weight: 700
+                line-height: 120%
+                letter-spacing: 0.576px
+
+    &__search
+        display: flex
+        align-items: center
+        gap: 12px
+        @media (max-width: 600px)
+            display: none
+
+        input
+            outline: none
+            border: none
+            background: none
+            color: #fff
+            font-size: 16px
+
+    &__header
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding: 12px 0
+
+    &__user
+        display: flex
+        align-items: center
+        gap: 24px
+        @media (max-width: 600px)
+            gap: 15px
+
+        img
+            width: 35px
+            height: 35px
+            flex-shrink: 0
+            border: 3px solid red
+            border-radius: 50%
+            object-fit: cover
+            cursor: pointer
+
+    &__drawerIcon
+        display: none
+        font-size: 25px
+        color: #fff
+        cursor: pointer
+        @media (max-width: 600px)
+            display: flex
+
+.drawerInput
+    display: flex
+    flex-direction: column
+    gap: 10px
+
+    input
+        width: 100%
+        outline: none
+        padding: 10px
+        border: 1px solid #333
+        border-radius: 5px
+
+    button
+        width: 100%
